@@ -14,7 +14,7 @@ services:
   service-db:
     image: postgres:14.7-alpine
     environment:
-      POSTGRES_USER: postgresdocker
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
     ports:
       - "5432:5432"
