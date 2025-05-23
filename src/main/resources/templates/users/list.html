@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+    </tr>
+    <tr data-th-each="usxer:${users}">
+        <td data-th-text="${user.getId()}"></td>
+        <td data-th-text="${user.getName()}"></td>
+        <td data-th-text="${user.getAge()}"></td>
+        <td data-th-text="${user.getEmail()}"></td>
+    </tr>
+</table>
+</body>
+</html>
